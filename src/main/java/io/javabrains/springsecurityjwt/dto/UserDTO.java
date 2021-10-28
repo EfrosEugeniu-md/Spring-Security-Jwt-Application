@@ -15,4 +15,14 @@ public class UserDTO {
     private String initialAmount;
     private String username;
     private String password;
+
+    public UserDTO(int i,NewUserDTO newUserDTO){
+        this.id=Long.parseLong(String.valueOf(i)) ;
+        this.firstName=newUserDTO.getFirstName();
+        this.lastName=newUserDTO.getLastName();
+        this.industry=newUserDTO.getIndustry();
+        this.username=newUserDTO.getUsername();
+        this.password=newUserDTO.getPassword();
+
+    }
 }
