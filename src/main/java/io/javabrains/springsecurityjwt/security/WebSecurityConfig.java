@@ -1,6 +1,6 @@
-package io.javabrains.springsecurityjwt;
+package io.javabrains.springsecurityjwt.security;
 
-import io.javabrains.springsecurityjwt.filters.JwtRequestFilter;
+import io.javabrains.springsecurityjwt.security.jwt.filters.JwtRequestFilter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.authentication.AuthenticationManager;

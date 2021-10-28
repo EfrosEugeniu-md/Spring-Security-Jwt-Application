@@ -1,12 +1,12 @@
 package io.javabrains.springsecurityjwt.Web;
 
-import io.javabrains.springsecurityjwt.MyUserDetailsService;
+import io.javabrains.springsecurityjwt.security.MyUserDetailsService;
 import io.javabrains.springsecurityjwt.dto.NewUserDTO;
 import io.javabrains.springsecurityjwt.dto.UserDTO;
-import io.javabrains.springsecurityjwt.models.AuthenticationRequest;
-import io.javabrains.springsecurityjwt.models.AuthenticationResponse;
+import io.javabrains.springsecurityjwt.security.jwt.models.AuthenticationRequest;
+import io.javabrains.springsecurityjwt.security.jwt.models.AuthenticationResponse;
 import io.javabrains.springsecurityjwt.usecase.AddNewUserUseCase;
-import io.javabrains.springsecurityjwt.util.JwtUtil;
+import io.javabrains.springsecurityjwt.security.jwt.util.JwtUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

@@ -1,4 +1,4 @@
-package io.javabrains.springsecurityjwt;
+package io.javabrains.springsecurityjwt.security;
 
 import io.javabrains.springsecurityjwt.dto.UserDTO;
 import io.javabrains.springsecurityjwt.repository.SpringDataUserRepository;

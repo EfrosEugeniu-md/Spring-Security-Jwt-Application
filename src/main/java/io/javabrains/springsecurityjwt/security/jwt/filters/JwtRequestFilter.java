@@ -1,7 +1,7 @@
-package io.javabrains.springsecurityjwt.filters;
+package io.javabrains.springsecurityjwt.security.jwt.filters;
 
-import io.javabrains.springsecurityjwt.MyUserDetailsService;
-import io.javabrains.springsecurityjwt.util.JwtUtil;
+import io.javabrains.springsecurityjwt.security.MyUserDetailsService;
+import io.javabrains.springsecurityjwt.security.jwt.util.JwtUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
