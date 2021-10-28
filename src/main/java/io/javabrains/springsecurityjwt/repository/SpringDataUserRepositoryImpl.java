@@ -5,6 +5,7 @@ import io.javabrains.springsecurityjwt.dto.UserDTO;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
 import java.util.Optional;
@@ -19,10 +20,12 @@ public class SpringDataUserRepositoryImpl implements SpringDataUserRepository {
         this.userDTOList = new ArrayList<>();
 
         userDTOList.add(new UserDTO(1L, "asdfcv", "jduyts",
-                "ghfdh", "fdgsh", "foo", "foo"));
+                "ghfdh", "fdgsh", "foo", "foo", new ArrayList<>(
+                Arrays.asList("USER"))));
 
         userDTOList.add(new UserDTO(2L, "asdfcv", "jduyts",
-                "ghfdh", "fdgsh", "foo1", "foo1"));
+                "ghfdh", "fdgsh", "foo1", "foo1", new ArrayList<>(
+                Arrays.asList("ADMIN"))));
 
     }
 

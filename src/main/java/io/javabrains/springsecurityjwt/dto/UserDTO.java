@@ -4,6 +4,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -15,6 +17,7 @@ public class UserDTO {
     private String initialAmount;
     private String username;
     private String password;
+    private List<String> role;
 
     public UserDTO(int i,NewUserDTO newUserDTO){
         this.id=Long.parseLong(String.valueOf(i)) ;
@@ -23,6 +26,6 @@ public class UserDTO {
         this.industry=newUserDTO.getIndustry();
         this.username=newUserDTO.getUsername();
         this.password=newUserDTO.getPassword();
-
+        this.role=newUserDTO.getRole();
     }
 }
